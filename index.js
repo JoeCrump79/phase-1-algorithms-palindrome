@@ -1,9 +1,31 @@
+
+
+
 function isPalindrome(word) {
-  // Write your algorithm here
+  const wordArray = word.split("")
+  const reverseArray = wordArray.reverse()
+  const reverseWord = reverseArray.join("")
+  
+
+  if (word === reverseWord) {
+    return true 
+  } else {
+    return false 
+  }
+
 }
 
 /* 
-  Add your pseudocode here
+Write down word forwards
+Write down word backwards 
+Compare spelling
+Check to see that each letter in each position in the two words is the same
+If the letters are the same it is a palindrome
+If the letter are not the same then it is not a palindrome
+
+Arrays have a reverse() method 
+
+
 */
 
 /*
